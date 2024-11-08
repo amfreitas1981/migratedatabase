@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Definindo o changeSet que faz referência ao arquivo .sql -->
+    <changeSet author="author" id="1">
+        <sqlFile path="classpath:db/changelog/sql/V1__create_table_and_insert_database_migration.sql" encoding="utf-8"/>
+    </changeSet>
+
+    <!-- Inserção de dados na tabela 'exemplo' -->
+    <!-- Tudo que precisar adicionar no banco e já executado anteriormente, é criado um novo changeSet por aqui -->
+    <!-- Claro, nomeando o author e os arquivos no classpath de forma ordenada e um nome amigável para entendimento das operações -->
+<!--    <changeSet author="test_insert_data" id="2">-->
+<!--        <sqlFile path="classpath:db/changelog/sql/V2__exemplo.sql" encoding="utf-8"/>-->
+<!--    </changeSet>-->
+
+    <!-- Inserção de dados na tabela 'exemplo' -->
+<!--    <changeSet author="insert_database_migration" id="3">-->
+<!--        <sqlFile path="classpath:db/changelog/sql/V3__exemplo.sql" encoding="utf-8"/>-->
+<!--    </changeSet>-->
+
+</databaseChangeLog>
