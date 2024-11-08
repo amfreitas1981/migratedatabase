@@ -3,12 +3,12 @@ spring:
 #  main:
 #    web-application-type: none  # Impede que o servidor web seja iniciado
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:XE # Exemplo para Oracle XE. Ajuste o host, porta e SID conforme necessário
-    username: system # Substitua pelo nome de usuário do seu banco de dados Oracle
+    url: jdbc:oracle:thin:@localhost:1521:XE # Exemplo para Oracle XE. Ajuste o host, porta e SID conforme necessario
+    username: system # Substitua pelo nome de usuario do seu banco de dados Oracle
     password: welcome1 # Substitua pela senha do banco de dados Oracle
     driver-class-name: oracle.jdbc.OracleDriver # Driver JDBC do Oracle
     hikari:
-      maximum-pool-size: 10 # (opcional) Tamanho máximo do pool de conexões
+      maximum-pool-size: 10 # (opcional) Tamanho maximo do pool de conexoes
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml # Caminho para o changelog do Liquibase
     enabled: true
