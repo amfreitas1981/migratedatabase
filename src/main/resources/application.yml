@@ -13,4 +13,6 @@ spring:
     change-log: classpath:db/changelog/db.changelog-master.xml # Caminho para o changelog do Liquibase
     enabled: true
     contexts: development
+    command:
+      timeout: 60000 # Tempo equivalente para executar a operacao em 1 minuto, calculado em milissegundos
 #    labels: dev
